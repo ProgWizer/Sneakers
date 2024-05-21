@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    /* background-color: rgba(255, 30, 0, 0.727); */
+    /* background: linear-gradient(to right, #e67467, #f70c04); */
+    /* background: linear-gradient(to right, #ed213a, #93291e); */
+    /* background: linear-gradient(to right, #740e7c, #a91e1e); */
+    /* background: #b93838;  */
+    /* background: #a13f3f; */
+    background: rgba(215, 19, 19, 0.775); 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+main{
+    padding: 100px 0 300px 0;
+
+    font-size: 25px;
+}
+h1, p {
+    text-align: center;
+
+}
