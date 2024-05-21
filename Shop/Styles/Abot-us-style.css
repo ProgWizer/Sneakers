@@ -1,0 +1,39 @@
+body{
+    background-color: #b2b2ef;
+    margin: 0;
+}
+
+.opened4{
+    color: rgb(255, 102, 0) !important;
+}
+
+.container1{
+    padding: 100px;
+}
+
+ h1{
+   text-align: center; 
+}
+
+p{
+    font-size: 25px;
+} 
+
+.links{
+    padding: 100px 0 200px 0;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(35, 0, 140);
+    
+}
+
+/* h6{
+    padding: 0 0 200px;
+} */
+
