@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: #b2b2ef;
+
+}
+main{
+    padding: 100px 0 400px 0;
+    font-size: x-large;
+}
+h2{
+    text-align: center ;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 1000px; */
+}
+
+
+
+
+
+
