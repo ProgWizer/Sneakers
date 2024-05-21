@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    background-color: rgb(195, 168, 164);
+}
+main{
+    padding: 100px 0 420px 0;
+
+    font-size: 25px;
+}
+h1, p {
+    text-align: center;
+    
+}
