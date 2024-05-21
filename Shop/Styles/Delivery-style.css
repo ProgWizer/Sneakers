@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+  background-color: #e2d0d0;
+}
+main{
+    padding: 100px 0 10px 0;
+    font-size: larger;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 50px ;
+  }
+  .color {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 100px;
+    background-color: red;
+  }
+  
+  .name {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+  } 
+
+  details {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0.5em 0.5em 0;
+    margin-bottom: 5px;
+    width: 600px;
+    margin-left: 20px;
+}
+details[open] > *{
+    transition: 0.9s ease;
+}
+summary {
+    background-color: #aaa;
+    cursor: pointer;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+  }
+  
+  details[open] {
+    padding: 0.5em;
+  }
+  
+  details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+  }
+
+/* 
+details summary {
+    color: #333;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    width: 600px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+} */
+
+details summary::before {
+    content: '+';
+    margin-right: 5px;
+}
+
+details[open] summary::before {
+    content: '-';
+}
+
+details > p {
+    margin-left: 20px;
+}
+
+::marker{
+    color: #aaa;
+
+}
