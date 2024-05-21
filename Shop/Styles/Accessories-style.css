@@ -1,0 +1,319 @@
+body{
+	/* background: rgb(226, 85, 97); */
+	/* background-color: #8934d9; */
+
+	/* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);  */
+	background: linear-gradient(to right,#f05053, #e1eec3, #f05053); 
+
+	margin: 0;
+}
+
+.opened2{
+    color: rgb(255, 68, 0) !important;
+}
+
+.text-container{
+	text-align: center;
+	padding: 100px 0 0 0;
+	font-size: large;
+	font-weight: 700;
+}
+/* Контейнер /с карточками
+.container {
+	text-align: center;
+	margin: 15px;
+	margin-top: 100px;
+}
+Карточка товара
+.cart {
+	margin: 20px auto;
+	width: 280px;
+	display: inline-block;
+	border-radius: 25px;
+	padding: 20px 20px;
+	border: 1px solid gray;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 300ms;
+
+	font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+
+Двигаем карточку
+.cart:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+Фото в карточках товара
+.container img {
+	width: 300px;
+	border-radius: 15px;
+}
+Класс фото
+.cart-foto {
+	transform: translate(0, -1.5rem);
+    transition: transform 500ms ease-in-out;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+Поднимаем ботинок
+.cart-foto:hover {
+	transform: translate(-1.5rem, -5rem) rotate(-20deg);
+}
+.cart p{
+	line-height: 8px;
+}
+Цена после скидки
+.price {
+	font-size: 25px;
+	color: red;
+
+}
+Цена до скидки
+.oldprice {
+	font-size: 15px;
+	font-weight: bold;
+	color: #717171;
+	text-decoration: line-through;
+
+}
+Наименование ботинок
+.product {
+	font-weight: 300;
+	font-size: 20px; 	
+}
+
+.container div {
+	margin: 15px;
+}
+В корзину
+.buy {
+	padding: 5px 15px;
+	background: red;
+	color: antiquewhite;
+	font-weight: 700;
+	text-decoration: none;
+} */
+
+
+
+
+
+
+
+
+
+
+/* Карточки */
+.container {
+	display: grid;
+  	margin: 0 auto;
+  	grid-template-columns: repeat(auto-fit, minmax(270px, 360px)); /* разделяем колонны так что сам заполняется контент по размерам макс 360 и мин 270 */
+  	position: relative;
+  	justify-content: space-between;
+  	max-width: 1440px;
+  	padding: 10px;
+}
+
+.container .cart
+{
+	position: relative;
+	width: 320px;
+	height: 450px;
+	background: #545f8a;
+	border-radius: 20px;
+	overflow: hidden;
+	text-align: center;
+	margin:10px 10px;
+}	
+.cart{
+	border: 1px solid rgb(136, 124, 124);
+}
+
+.container .cart:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(179, 39, 114);
+	clip-path: circle(150px at 80% 20%); /*Круг в карточке справа сверху*/ /*обрезает круг который состоит из 150px смещенным на 80% от левого края и 20% от верхнего края элемента*/
+	transition: 0.5s ease-in-out;
+}
+
+.container .cart:hover:before
+{
+	clip-path: circle(300px at 80% -20%);
+}
+
+.container .cart:after
+{
+	content: 'Nike';
+	position: absolute;
+	top: 30%;
+	left: -20%;
+	font-size: 12em;
+	font-weight: 800;
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.04);
+}
+
+.container .cart .imgbox
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	width: 100%;
+	height: 220px;
+	transition: 0.5s;
+}
+
+
+.container .cart:hover .imgbox
+{
+	top: 0%;
+	transform: translateY(0%);
+}
+
+.container .cart .imgbox img
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-25deg);
+	width: 270px;
+}
+
+.container .cart .contentBx
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	transition: 1s;
+	z-index: 1;
+}
+
+.container .cart:hover .contentBx
+{
+	height: 210px;
+}
+
+.container .cart .contentBx h2
+{
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.container .cart .contentBx .size,
+.container .cart .contentBx .color
+{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 1px 20px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.container .cart:hover .contentBx .size
+{
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.5s;
+}
+
+.container .cart:hover .contentBx .color
+{
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.6s;
+}
+
+.container .cart:hover .contentBx a
+{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.75s;
+}
+
+
+.container .cart .contentBx .size h3,
+.container .cart .contentBx .color h3
+{
+	color: #fff;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: 10px;
+}
+
+.container .cart .contentBx .size span
+{
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 14px;
+	display: inline-block;
+	color: #111;
+	background: #fff;
+	margin: 0 5px;
+	transition: 0.5s;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/* наведение на размер */
+.container .cart .contentBx .size span:hover
+{
+	background: #434eb6;
+}
+
+.container .cart .contentBx .color span
+{
+	width: 20px;
+	height: 20px;
+	background: #ff0;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+}
+/* цвет модели */
+.container .cart .contentBx .color span:nth-child(2)
+{
+	background: #ffffff;
+}
+.container .cart .contentBx .color span:nth-child(3)
+{
+	background: darkgray;
+}
+.container .cart .contentBx .color span:nth-child(4)
+{
+	background: #000000;
+}
+
+.container .cart .contentBx a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #ffffff;
+	border-radius: 4px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.5s;
+	color: rgb(25, 136, 176);
+}
