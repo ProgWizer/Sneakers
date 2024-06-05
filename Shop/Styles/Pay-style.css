@@ -15,7 +15,6 @@ h2{
 .container{
     display: flex;
     justify-content: space-around;
-    /* max-width: 1000px; */
 }
 
 
