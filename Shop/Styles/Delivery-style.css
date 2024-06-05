@@ -54,19 +54,6 @@ summary {
     margin-bottom: 0.5em;
   }
 
-/* 
-details summary {
-    color: #333;
-    cursor: pointer;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    width: 600px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-} */
-
 details summary::before {
     content: '+';
     margin-right: 5px;
