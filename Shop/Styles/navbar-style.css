@@ -24,8 +24,6 @@
 }
 .list_menu li{
 	margin: 20px 0;
-	/* text-decoration: none; */
-	/* list-style-type: none; */
 }
 .list_menu{
 	margin-bottom: 50px;
@@ -34,7 +32,7 @@
 	padding: 25vh 50px;
 	background: rgba(20, 20, 20, 0.5);
 	height: 100vh;
-	border-right: 7px solid #e91e63;
+	border-right: 7px solid #9e00ac;
 	position: fixed;
 	left: -350px;
 	transition: 0.4s ease;
@@ -80,9 +78,6 @@
 }
 
 @media (max-width: 768px) /*and (min-width:320px) */ {
-
-
-
 	/* Шапка */
 /* уменьшенный Логотип */
 .logo{
@@ -206,15 +201,15 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 }
-
-.social-links a:first-child{
+/* инста */
+/* .social-links a:first-child{
 	background: linear-gradient(to top, #833ab4, #fd1d1d, #fcb045);
-} 
+}  */
 .social-links a:not(:last-child){
-	background-color: #2a22bf;
+	background-color: #4862c8;
 }
 .social-links a:last-child{
-	background-color: #4862c8;
+	background-color: #2a22bf;
 }  
 
   /*Адаптив подвала*/
